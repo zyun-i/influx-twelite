@@ -1,0 +1,10 @@
+[Unit]
+Description=twe-lite sensors
+
+[Service]
+ExecStart=/usr/local/bin/twelite.py
+Type=simple
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
